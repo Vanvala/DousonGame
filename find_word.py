@@ -13,7 +13,10 @@ for i in range(5):
         print("Нет")
 
 guess = input('\nСлово?: ')
-correct = word
 
-while guess != correct and guess != '':
-
+if guess == word:
+    print('Правильно, вы выйграли!')
+else:
+    print(f'Опа, не верно( Было загаданно слово {word}')
+print('Спасибо за игру!')
+input('\n\nНажмите Ввод, чтобы выйти.')
